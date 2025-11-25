@@ -1,8 +1,8 @@
-# HTTP Requests Quickstart
+# x402 Quickstart
+
+A collection of practical tools and examples for HTTP requests, payment-gated APIs, text analysis, and exploring the original vision of the web.
 
 ![HTTP 402 Payment Required Demo](screenshot.png)
-
-Great! Let's strip everything back to the absolute basics—no crypto, no x402, no agents yet. Just pure, classic HTTP requests you can try right now in your browser or terminal.
 
 ## Project Structure
 
@@ -17,13 +17,20 @@ x402-quickstart-for-noobs/
 ├── screenshot.png              # HTTP 402 demo screenshot
 ├── x402-payload.pdf            # X402 protocol documentation
 ├── x402-payload.txt            # Extracted text from PDF
+├── chomsky-lens/               # Parts of speech analyzer
+│   ├── README.md              # Chomsky Lens documentation
+│   └── chomsky-lens-final.html # Self-contained POS tagging app
 └── ted-nelson-clone/           # Ted Nelson's original web vision
     ├── README.md               # Ted Nelson materials guide
     ├── writings/               # Original PDFs and images
     └── extracted-text/         # Text files extracted from PDFs/images
 ```
 
-## 1. What is an HTTP request? (in plain English)
+---
+
+## Root Directory: HTTP & Payment-Gated APIs
+
+### What is an HTTP request? (in plain English)
 
 When your browser (or any program) wants something from a web server, it sends a tiny message called an HTTP request. The server reads it, does something, and sends back an HTTP response.
 
@@ -36,7 +43,7 @@ The most common types of requests (called "methods"):
 | PUT | "Replace this thing with my data" | Updating your profile photo |
 | DELETE | "Delete this thing" | Removing a tweet |
 
-## 2. A real HTTP request looks like this (raw text)
+### A real HTTP request looks like this (raw text)
 
 ```
 GET /hello HTTP/1.1
@@ -46,7 +53,7 @@ Accept: text/plain
 
 That's literally it. Four lines.
 
-## 3. Hello World you can try in 5 seconds
+### Hello World you can try in 5 seconds
 
 Open your terminal (Mac/Linux) or PowerShell (Windows) and paste this single line:
 
@@ -82,7 +89,7 @@ You should get back something like:
 
 Congratulations—you just made your first real HTTP request and got a response!
 
-## 4. Even easier: do it in the browser
+### Even easier: do it in the browser
 
 Just paste these URLs into your address bar:
 
@@ -91,11 +98,11 @@ Just paste these URLs into your address bar:
 - `https://httpbin.org/status/418` → returns HTTP 418 "I'm a teapot"  
 - `https://httpbin.org/anything` → echoes back whatever you send it
 
-## 4.5. HTTP 402 Payment Required
+### HTTP 402 Payment Required
 
 HTTP 402 is a reserved status code meaning "Payment Required". It's rarely used in practice, but it's perfect for understanding how payment-gated APIs work.
 
-### Test 402 with curl
+#### Test 402 with curl
 
 You can test a 402 response using httpbin:
 
@@ -109,7 +116,7 @@ HTTP/1.1 402 Payment Required
 ...
 ```
 
-### See the full response
+#### See the full response
 
 To see headers and understand what a 402 response looks like:
 
@@ -123,7 +130,7 @@ The `-v` (verbose) flag shows you:
 - All response headers
 - The response body (if any)
 
-### What happens in practice
+#### What happens in practice
 
 When a server returns 402, it's saying: "This resource requires payment. Here's what you need to do to access it."
 
@@ -150,7 +157,7 @@ Content-Type: application/json
 }
 ```
 
-### Handle 402 programmatically
+#### Handle 402 programmatically
 
 In a real application, you'd check the status code and handle it:
 
@@ -160,7 +167,7 @@ curl -s -o /dev/null -w "%{http_code}" https://httpbin.org/status/402
 # Output: 402
 ```
 
-### Local 402 server example
+#### Local 402 server example
 
 Run a local server that demonstrates 402:
 
@@ -180,7 +187,7 @@ curl -i -H "X-Payment-Token: paid" http://localhost:8000
 
 The first request returns 402 with payment instructions. The second request (with the payment header) returns 200 with the content.
 
-### PDF Server with 402 Payment Gating
+#### PDF Server with 402 Payment Gating
 
 Serve a PDF file that requires payment:
 
@@ -198,7 +205,7 @@ curl -i http://localhost:8001
 curl -H "X-Payment-Token: paid" http://localhost:8001 -o downloaded.pdf
 ```
 
-## 5. Super-minimal "Hello World" server you can run locally
+### Super-minimal "Hello World" server you can run locally
 
 Save this as `server.py` and run `python server.py` (requires Python 3):
 
@@ -224,11 +231,11 @@ Test it with curl:
 curl http://localhost:8000
 ```
 
-## 6. Testing Your OpenAI API Key
+### Testing Your OpenAI API Key
 
 Before you can use OpenAI's API, you need to set up and test your API key. Here's how:
 
-### Setup
+#### Setup
 
 1. **Install dependencies:**
 
@@ -244,7 +251,7 @@ OPENAI_API_KEY=sk-your-actual-key-here
 
 **⚠️ Important:** The `.env` file is excluded from git (see `.gitignore`). Never commit API keys or secrets!
 
-### Test the API Key
+#### Test the API Key
 
 Run the test script to verify your API key is working:
 
@@ -269,9 +276,56 @@ Testing API key...
 
 If there's an error, the script will tell you what went wrong (missing key, invalid key, network issue, etc.).
 
-## 7. Ted Nelson's Original Vision
+---
 
-This project includes a collection of Ted Nelson's seminal works on hypertext and the original vision of the web. See [`ted-nelson-clone/README.md`](ted-nelson-clone/README.md) for details.
+## Chomsky Lens: Parts of Speech Analyzer
+
+A self-contained HTML application for color-coding parts of speech in text using the full WordNet dictionary (29,993 words).
+
+### Quick Start
+
+Simply open `chomsky-lens/chomsky-lens-final.html` in any web browser—no server or dependencies required.
+
+### Features
+
+- **Self-contained** - Single HTML file with embedded WordNet dictionary
+- **Color-coded POS tagging** - Nouns (blue), Verbs (green), Adjectives (red), Adverbs (orange), Prepositions (purple)
+- **Full WordNet integration** - 8,429 verbs, 17,863 adjectives, 3,630 adverbs
+- **Smart noun detection** - Detects capitalized words and common nouns
+- **Offline-capable** - Works without internet connection
+
+### Dictionary Statistics
+
+The embedded dictionary contains:
+- **Verbs**: 8,429 words
+- **Adjectives**: 17,863 words
+- **Adverbs**: 3,630 words
+- **Prepositions**: 71 words
+- **Total**: 29,993 words
+
+### Usage
+
+1. Open `chomsky-lens/chomsky-lens-final.html` in any modern web browser
+2. Paste your transcript into the text area
+3. Click "Process Transcript" to see color-coded output
+4. Click "List All Colored Words" to see all highlighted words by category
+5. Click "Clear" to reset
+
+See [`chomsky-lens/README.md`](chomsky-lens/README.md) for full documentation.
+
+---
+
+## Ted Nelson's Original Vision
+
+This project includes a collection of Ted Nelson's seminal works on hypertext and the original vision of the web.
+
+### Overview
+
+Ted Nelson coined the term "hypertext" and envisioned a web where:
+- Every document could link to any other document
+- Authors could receive micropayments for their content
+- Information could be transcluded (embedded) rather than copied
+- Version control was built into the system
 
 ### Extract Text from PDFs and Images
 
@@ -282,6 +336,17 @@ python3 extract_text.py
 ```
 
 This will process all PDFs and images and save extracted text to `ted-nelson-clone/extracted-text/`.
+
+### Materials Included
+
+- **Computer Lib / Dream Machines** - Nelson's foundational work on personal computing
+- **Literary Machines** - The hypertext manifesto
+- **Geeks Bearing Gifts** - History of computing and hypertext
+- **Project Xanadu** - The original hypertext system design
+
+See [`ted-nelson-clone/README.md`](ted-nelson-clone/README.md) for full details and reading guides.
+
+---
 
 ## Security Note
 
