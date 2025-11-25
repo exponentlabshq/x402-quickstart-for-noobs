@@ -1,7 +1,11 @@
-# Environment variables
+# Environment variables and secrets
 .env
 .env.local
 .env.*.local
+*.env
+thirdweb.env
+.env.example
+.env.*
 
 # Python
 __pycache__/

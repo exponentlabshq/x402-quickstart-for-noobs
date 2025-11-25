@@ -4,6 +4,25 @@
 
 Great! Let's strip everything back to the absolute basics—no crypto, no x402, no agents yet. Just pure, classic HTTP requests you can try right now in your browser or terminal.
 
+## Project Structure
+
+```
+x402-quickstart-for-noobs/
+├── readme.md                    # This file
+├── requirements.txt             # Python dependencies
+├── test_api_key.py             # OpenAI API key tester
+├── server_402.py               # Simple 402 Payment Required demo server
+├── server_pdf_402.py           # PDF server with 402 payment gating
+├── extract_text.py             # Extract text from PDFs and images
+├── screenshot.png              # HTTP 402 demo screenshot
+├── x402-payload.pdf            # X402 protocol documentation
+├── x402-payload.txt            # Extracted text from PDF
+└── ted-nelson-clone/           # Ted Nelson's original web vision
+    ├── README.md               # Ted Nelson materials guide
+    ├── writings/               # Original PDFs and images
+    └── extracted-text/         # Text files extracted from PDFs/images
+```
+
 ## 1. What is an HTTP request? (in plain English)
 
 When your browser (or any program) wants something from a web server, it sends a tiny message called an HTTP request. The server reads it, does something, and sends back an HTTP response.
@@ -146,7 +165,7 @@ curl -s -o /dev/null -w "%{http_code}" https://httpbin.org/status/402
 Run a local server that demonstrates 402:
 
 ```bash
-python server_402.py
+python3 server_402.py
 ```
 
 Then in another terminal, test it:
@@ -160,6 +179,24 @@ curl -i -H "X-Payment-Token: paid" http://localhost:8000
 ```
 
 The first request returns 402 with payment instructions. The second request (with the payment header) returns 200 with the content.
+
+### PDF Server with 402 Payment Gating
+
+Serve a PDF file that requires payment:
+
+```bash
+python3 server_pdf_402.py
+```
+
+Then test it:
+
+```bash
+# Without payment - gets 402
+curl -i http://localhost:8001
+
+# Download PDF with payment token
+curl -H "X-Payment-Token: paid" http://localhost:8001 -o downloaded.pdf
+```
 
 ## 5. Super-minimal "Hello World" server you can run locally
 
@@ -205,12 +242,14 @@ pip install -r requirements.txt
 OPENAI_API_KEY=sk-your-actual-key-here
 ```
 
+**⚠️ Important:** The `.env` file is excluded from git (see `.gitignore`). Never commit API keys or secrets!
+
 ### Test the API Key
 
 Run the test script to verify your API key is working:
 
 ```bash
-python test_api_key.py
+python3 test_api_key.py
 ```
 
 The script will:
@@ -229,6 +268,30 @@ Testing API key...
 ```
 
 If there's an error, the script will tell you what went wrong (missing key, invalid key, network issue, etc.).
+
+## 7. Ted Nelson's Original Vision
+
+This project includes a collection of Ted Nelson's seminal works on hypertext and the original vision of the web. See [`ted-nelson-clone/README.md`](ted-nelson-clone/README.md) for details.
+
+### Extract Text from PDFs and Images
+
+To extract text from PDFs and images in the project:
+
+```bash
+python3 extract_text.py
+```
+
+This will process all PDFs and images and save extracted text to `ted-nelson-clone/extracted-text/`.
+
+## Security Note
+
+**Never commit secrets!** The `.gitignore` file excludes:
+- `.env` files
+- `*.env` files
+- `thirdweb.env`
+- All environment variable files
+
+Always use `.env.example` as a template and keep actual secrets in `.env` files that are git-ignored.
 
 ---
 

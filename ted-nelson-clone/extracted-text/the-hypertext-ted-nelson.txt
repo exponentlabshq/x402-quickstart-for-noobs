@@ -1,0 +1,53 @@
+THE HYPERTEXT. Theodor H. Nelson, Vassar Collere,
+Poughkeepsie, N.Y,, .5.4.
+
+We are at an historic divide like that created by movable
+type. To supplement movable type came such further inven-
+tions as the footnote, preface, magazine, bookshelf and edi-
+tor. The technology of automatic display, stored-program
+computers and bulk information storarce call now for a like
+range of inventions and conventions: di splay modes, organizing
+arrangements, and academic and professional roles and prac-
+tices that will give us the most from these new devices.
+
+This paper proposes a new medium, the hypertext. This is a
+generic term for texts (and combinations of texts with other
+materials) which, because of their structure, require auto-
+matic handling and display devices. The hypertext will typi-
+cally be non-linear, branching, and large, with various
+options to the user.
+
+The idea of the hynertext is distinct from Information Re-
+trieval (snecialiot dissemination and query search), Infur-
+mation Display (presentation of data desired in a known con-
+text) and Programmed Education (restricted-sequence presenta-
+tion and drill.) None of these fits the general case. The
+
+hypertext is suited not just to specialty materials (which
+
+fit on paner nicely), but to give general reference and in-
+
+striction. It may contain a corpus of general and special
+
+materials, with their many interconnections indexed, Arbi-
+
+trary boundaries of subject matter can be ignored. 2 feed sel
+sf
+
+may be built out of existing writs ngs, not mechanical heap-
+ed but personally assembled, according to considerations of
+Showmanship and pedagogy, Like any anthology, the hypertext
+may contain interrelated texts and information from diverse
+original sources. It may also contain summaries and abstracts
+written at different levels, permitting separate entry to
+users of different backgrounds, competences and interests, al-
+lowing them to pursue such details or overview as they desire,
+A hypertext system could provide instant lookup of definitions,
+biographies, or explanations. It could have new types of
+aphic material (moving or mnemonic), ways to show relations
+indexes, footnotes, marginalia), even of browsing or reading
+O.key stroboscopic), Discursive, conceptual and general-pur-
+pose, it will permit self-education according to interest and
+motivation, even exploiting natural curiosity and intellectual
+gumption, which so often hinder conventional instruction.
+

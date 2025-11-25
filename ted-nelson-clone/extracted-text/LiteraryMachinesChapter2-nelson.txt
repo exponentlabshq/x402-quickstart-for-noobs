@@ -1,0 +1,2118 @@
+Source: LiteraryMachinesChapter2-nelson.pdf
+================================================================================
+
+
+--- Page 2 ---
+
+LITERARY 
+THE REPORT ON, AND OF, PROJECT XANADU 
+CONCERNING 
+WORD PROCESSING, 
+ELECTRONIC PUBLISHING, 
+HYPERTEXT, THINKERTOYS, 
+TOMORROW'S INTELLECTUAL REVOLUTION, 
+AND CERTAIN OTHER TOPICS 
+INCLUDING 
+KNOWLEDGE, EDUCATION AND FREEDOM. 
+by Ted Nelson 
+
+--- Page 3 ---
+
+THIRD EDITION. This volume incorporates changes 
+made by the Xanadu working group for the second 
+edition, particularly the back-end specfications 
+as described in the final chapter. 
+Anyone wishing to interface to the system should 
+contact the Xanadu working group at 313/663-3637, 
+as the details described in that chapter are not 
+yet locked. 
+Additional copies of this book may be had by 
+sending a valid check for fifteen dollars to 
+Ted Nelson, Box 128, Swarthmore PA 19081. 
+No purchase orders or deferred-payment plans 
+can be accepted. 
+A number of trade and service marks, especially 
+the word "Xanadu" and the Eternal-Flaming-X 
+symbol, are claimed for the products and 
+services described in this book. See Chapter 
+Four, "Trademarks." 
+(s) 1981 Theodor Holm Nelson 
+
+--- Page 4 ---
+
+CHAPTER TWO 
+PROPOSAL FOR A UNIVERSAL ELECTRONIC 
+PUBLISHING SYSTEM AND ARCHIVE 
+2.1 AN ELECTRONIC LITERARY SYSTEM 
+2.2 WHAT IS LITERATURE'? 
+2.3 A TRUE STORAGE SYSTEM FOR TEXT AND OTHER EVOLVING STRUCTURES 
+2.4 A LINKING SYSTEM FOR TEXT ANO OTHER DATA 
+2.5 THE DOCUMENT CONVENTION 
+2.6 COMPOUND DOCUMENTS 
+2. 1 ELECTRONIC PUBLISHING 
+MAKING THE LITERARY SYSTEM UNIVERSAL 
+2.8 DISTRIBUTION AND NETWORKING 
+2.9 VITAL ISSUES 
+
+--- Page 6 ---
+
+CHAPTER 2 
+PROPOSAL FOR 
+A UNIVERSAL ELECTRONIC 
+PUBLISHING SYSTEM AND ARCHIVE 
+LITERARY We azee aZ.Z. agreed that your theoPy is arazy. 
+The question whiah divides us is whether it is 
+arazy enough to have a ahance of being aorreat. 
+My ObJ1Z feeZ.ing is that it is not crazy enough. 
+Niels Bohr 
+quoted in Kenneth Brower, 
+~ Starship and ~ Canoe, 46 
+2fi MACHINES 
+
+--- Page 7 ---
+
+PLAN OF THIS CHAPTER 
+This chapter is in nine sections, which introduce and elaborate on a very particular and precise design and plan. This chapter, design and plan are the heart of this book, a crossroad through which you are asked to pass repeatedly. 
+Some readers, especially those who may not have given these matters any thought, may find this material tough sledding the first time through. Therefore a summary level has been provided. (The bigger type. ) Stick to that the first time through, or if you're in a hurry later on to pass to another Chapter Three. 
+If this chapter is long and tedious to read, that is only because it strives for completeness. I am sure that a few years from now everything in it will be quickly divined by sma.ll chi-ldren sitting at a console which enacts these principles. 
+LITERARY t/i MACHINES 
+
+--- Page 8 ---
+
+AN ELECTRONIC LITERARY SYSTEM 
+Here is the right way to do something by computer: ~irst figure out 
+what you really want to do and think about, instead of staying bog­
+ged down in what you usually do and think about when you don't use 
+a computer. 
+What will be described here is 
+the way we think information should be 
+handled. In the later sections of the 
+chapter we will be describing the de­
+tailed idea of it, the conceptual 
+structure'"or virtuality. This chap­
+ter is only about this idea, without 
+technicalities. (The few "computer 
+technicalities" a.re in footnotes.) 
+We also believe that we have car­
+ried out this design in a practical 
+form, and that it will shortly exist as a functioning computer program with 
+many uses. This belief will be proven 
+or disproven in the fullness of time. 
+Meanwhile, what is really being des­
+cribed is what we think we have crea­
+ted. Believing that this is the right 
+virtuali ty, it is what we have imple­
+mented. 
+The footnotes contain a few kib­
+itzing remarks to those interested in 
+how we have done it.* 
+• The Project Yanadu g:c,up baa != -tilM baen developing software to do vb.at is described 
+hare vitb. no cmiplic:ation• tor the~. OUr way of seeing the world,•• de•c:ri.bad here, is 
+rellected 1A any •Y• 1A our 1muaua.i data structure. 
+(continued at bottom of next page) 
+LITERARY MACHINES 
+
+--- Page 9 ---
+
+For instance, we are going to look at ways of dealing with text 
+based on its "true" structure, if we can figure out what that is. 
+THE DESIGN 
+It is difficult to describe an 
+interactive computer system so people 
+can visualize it. 1-k)st people have 
+not had practice in visualizing jump­
+ing and responding objects on the bas­
+is of abstract descriptions. 
+When we say also that we think 
+this design is simple and basic, like 
+the telephone, that may be hard for 
+some readers to believe, considering 
+that it takes so many 'Nerds to des­
+cribe it. Yet we think this design, 
+once understood, is spare, parsimon­
+ious and clear. (And that a few years 
+from now, small children will under­
+stand it immediately when they get a 
+chance to play with it.) 
+(continued from previous footnote) The structure of documents and 
+links to be described here is, for a 
+computer system, unusually su.,ple. 
+This is all there is: we will describe 
+it completely. We regard the simpli­
+city of this design as its greatest 
+virtue. The user has no direct con­
+tact with technicalities. The techni­
+calities undemeath are simply the 
+means whereby certain exact and simple 
+services are rapidly performed. 
+THE INTRINSIC STRUCTURE 
+IS WHAT YOU SHOULD SEE 
+The structure a user sees should 
+be the intrinsic structure of his ma­
+terial, and not (as in many "word pro­
+cessing" systems) some amalgam combin­
+ing the material itself with sane set 
+'?0 da efficiently vbat will be daac:rtbed hen. we hav. had to owrtbrov All conventions and 
+conventional uaumpt.ian• &bcNt data handling and indaxing, buildinq froa Che bott:cm up a syst .. 
+t.ba.t we thinJc can grow indatinit.aly without c.'lclting on retrieval and tranmaisaion bottlenedcs. 
+iM belieff w ha,,. &ehiav.d this in our uniqua proprieea.ry sott,,an. 
+We could only carry out thi• daaign with th• help ot certun t:ecbnical developments ·.mien 
+a.re !or the preMnt proprietary And secnt. A number of radical diacoffries int.he field of. 
+ccmputar indexinq and ntrieval r.ndar it poaaibl• to offer !:!lase services within seconds on 
+~ic;urati011• ot pnNDt-day equipmnt, e"Nn, we believe, a11 the number ot documents and ser­
+vice requeau •ll;landa to utz'IXM::aic:al figuna. See "The Only Way It Could ;Jork," Chapter 4. 
+LITERARY 2/1 MACHINES 
+
+--- Page 10 ---
+
+And we are going to create a service that simply stores and sends 
+back different excerpts from this "true" structure of text. 
+of obtrusive conventions under which 
+it is stored. 
+What the thing is--its natural 
+structure to the user--is what he 
+should see and work on: nothing less, 
+nothing more, nothing else. It is 
+therefore the representation of this 
+structure-- of whatever structure the 
+user may be concerned with--that 
+should concern us. However, the com­
+plexities of what may be wanted can 
+be staggering. So the problem is to 
+create a general representation and 
+storage system that will permit auto­
+matic storage of all structures a 
+user might want to work on, and the 
+faithful accounting of theiJ: develop­
+ment. 
+WORLD AND VIEWPANE: 
+BACK AND FRONT ENDS 
+While computer display screens 
+are to be the foci of our coming so­
+ciety, what the world is that will 
+show on the screens is perhaps of 
+greater concern. 
+The question in computerizing any­
+thing, then, should be ~ is the 
+true structure? Having answered that, 
+LITERARY you design a system that stores and 
+shows that true structure. 
+Storage is fundamental. What you 
+store should be the basic structure of 
+the information you are dealing with-­
+not some tricky arrangement that is 
+carefully matched to some set of pro­
+grams or hardware. (How you will look 
+at this world when it is spreadeagled 
+on your screen is your own business: 
+you control it by your choice of 
+screen hardware, by your choice ov 
+viewing program, by what you do as you 
+watch. But the structure of that 
+world is the same from screen to 
+screen.) 
+What we will discuss here is rep­
+resentation of the true structure of a 
+certain kind of information, not how 
+to show it. We believe that an order­
+ly overall system can be developed for 
+most types of written and graphical 
+information and its instantaneous de­
+livery. 
+That is the storage system we 
+will be discussing here. Think of it 
+as a "back-end" service that can sup­
+ply your system. At the screen of 
+your computer you explore what is 
+MACHINES 
+
+--- Page 11 ---
+
+stored, change it, add to it. The ser­
+vice we propose takes care of putting 
+it away and sending you whatever part 
+you ask for as fast as possible. That 
+is the back end. What computer you 
+watch it through, and how that machine 
+is programmed, is your "fr~end'-- a 
+separate problem. 
+This is a VIRTUALITY. One of the 
+principles of designing virtuality is 
+that there are many possible overall 
+organizations that may be very similar. 
+The problem of choosing among them is 
+not simple. The tricky words that 
+follow, "true structure," suggest ut­
+ter uniqueness. But this is not the 
+LITERARY only "true" design. It is the design 
+suggested by the one working precedent 
+that we know of: literature. 
+Whether it is a good and right 
+design is the central question for the 
+reader to judge. What we describe can 
+be done: if not by us, then by some­
+body sometime. But if it is not the 
+right system, then it is on the read­
+er's shoulders to come up with a bet­
+ter one. 
+Suggestons are welcome-- if you 
+are sure you understand this design 
+first (including Balance I. See 
+"Tuning the System," a Chapter 3.) 
+MACHINES 
+
+--- Page 12 ---
+
+2.2 WHAT IS LITERATURE? 
+Literature is an ongoing system of interconnecting documents. 
+THE LITERARY PARADIGM 
+A piece of writing-- say, ~ sheet 
+of typed paper on the table-- looks a­
+lone and independent. This is quite 
+misleading. Solitary it may be, but 
+it is probably also part of a litera­
+ture. 
+By "a literature" we do not mean 
+anything necessarily to do with belles­
+lettres or leather-bound books. We 
+mean it in the same broad sense of 
+"the scientific literature," or that 
+graduate-school question, "Have you 
+looked at the literature?" 
+A literature is ~ system of in­
+terconnected writings. We do not of­
+fer this as our definition, but as a 
+discovered fact. And almost all wri­
+ting is part of some literature. 
+The way people write is based in 
+large part on these interconnections. A person reads an article. He 
+says to himself, "Where have I seen 
+something like that before? Oh, yes 
+--" and the previous connection is 
+brought mentally into play. 
+Consider how it works in science . 
+A genetic theorist, say, reads current 
+writings in the journals. These refer 
+back, explicitly, to other writings; 
+if he chooses to question the sources, 
+or review their meaning, he is follow­
+ing links as he gets the books and 
+journals and refers to them. He may 
+correspond with colleagues, mentioning 
+LITERARY Z/1 MACHINES 
+
+--- Page 13 ---
+
+in his letters what he has read, and 
+receiving replies suggesting that he 
+read other things. (Again, the let­
+ters are implicitly connected to these 
+other writings by implicit links.) 
+Seeking to refresh his ideas, he goes 
+back to Darwin, and also derives in­
+spiration from other things he reads-­
+the Bible, science fiction. These are 
+linked to his work in his mind. 
+In his own writing he quotes and 
+cites the things he has read. (Again, 
+explicit links are being made. ) Other 
+readers, taking interest in his sour­
+ces, read them (following the links). 
+In our Westem cultural tradition, 
+writings in principle remain continu­
+ously available-- both as recently 
+quoted, and in their original inviola­
+ble incamations-- in a great proces­
+sion. 
+So far we have stressed some of 
+the processes of referral and linkage . 
+But also of great importan ce are con­
+troversy and disagreement and reeval­
+uation. 
+Everyone agrues over the inter­
+pretation of former writings, even our 
+geneticists. One author will cite (or 
+link to) a passage in Darwin to prove 
+Darwin thought one thing, anohter will 
+find another passage to try to prove 
+he thought another. And views of a field, and the way 
+a field's own past is viewed within it, 
+change. A formerly forgotten resear­
+cher may come to light (liJ:ce Mendel), 
+or a highly respected researcher may 
+be discredited (Cyril Burt) • And so 
+it goes, on and on. The past is con­
+tinually changing --or at least seems 
+to be, as we view it. 
+There is no predicting the use 
+future people will make of what is 
+written. Any sranmary, any particular 
+view, is exactly that: the perspective 
+of a particular individual (or school 
+of thought) at a particular time. We 
+cannot know how things will be seen in 
+the future. We can assume there will 
+never be a final and definitive view 
+of anything. 
+And yet this system functions. 
+LITERATURE IS DEBUGGED. 
+In other words, even though in 
+every field there is an ever-changing 
+flux of emphasis and perspective and 
+distortion, and an ever-changing fash­
+ion in content and approach, the on­
+going mechanism of written and pub­
+lished text fumishes a flexible ve­
+hicle for this change, continually ad­
+apting. Linkage structure between 
+documents forms a flux of invisible 
+threads and rubber bands that hold the 
+thoughts together. 
+LITERARY 1/8 MACHINES 
+
+--- Page 14 ---
+
+Linkage structure and its rami­
+fications are surprisingly similar in 
+the world of business. 
+A business letter will say, "In 
+reply to your letter of the 13th ••• " 
+Or a business form, another key coDDDu­
+nication, may say in effect, "In res­
+ponse to your order of the 24th of 
+last month, \\18 can supply only half of 
+what you have asked for, but can fill 
+the rest of the order with such-and­
+such item from our catalog." All of 
+these citations may be thought of as 
+cross-linkages among documents. 
+The point is clear, whether in 
+science or business or belles lettres. 
+Within bodies of writing, everywhere, 
+there are linkages \\18 tend not to see. 
+The individual document, at hand, is 
+what \\18 deal with; \\18 do not see the 
+total linked collection of them all at 
+once. But they are there, the docu­
+ments not present as \\1811 as those 
+that are, and the grand cat's-cradle 
+among them all. 
+From this fundamental insight, \\18 
+have endeavored to create a system for 
+text editing and retrieval that will 
+receive, and handle, and present, doc­
+uments with links between them. We 
+believe there is something very right 
+about the existing system of litera­
+ture; indeed we suspect that there are 
+LITERARY things right a.bout it that \\18 don't 
+even know, as with Nature. And so we 
+have tried to mirror, and replicate, 
+and extend, existing literary struc­
+ture as \\18 have here described it. 
+MACHINES 
+
+--- Page 15 ---
+
+2. 3 A TRUE STORAGE SYSTEM FOR TEXT 
+AND OTHER EVOLVING STRUCTURES 
+We are going to propose a way of keeping information that may 
+seem odd and inefficient at first, but turns out to have remark­
+able power later on. 
+PROLOGUE: 
+MAKING EXTRA COPIES ALL THE TIME 
+In most computer applications 
+(such as the layman's newest game, 
+"word processing,") it is often neces­
+sary to keep repeated copies. This 
+frequent and disagreeable problem has 
+several purposes. 
+The obvious purpose, often thwar­
+ted, is to assure the safety of recent 
+work against various kinds of accident. 
+But that can be gradually ruled out: 
+many systems are coming to make reli­
+able "safety copies" automatically. 
+A more fundamental use is to keep 
+track of former states of the work, in 
+case mistakes or wrong decisions need 
+to be undone. This need, backtrack, 
+is serious and important. We do not 
+need to go back through previous ma-
+LITERARY terial often, but if we need to do it 
+at all we ought to be able to do it 
+rignt. Here is what doing it right 
+entails. 
+DEPARTMENT OF REDUNDANCY DEPARTMENT 
+Note, however, that the conven­
+tional means of storage is rather 
+silly. It involves making a complete 
+copy of everything you've done so far. 
+If what you're doing is making repeat­
+ed small changes and additions, then 
+you are repeatedly storing the same 
+material, redundantly. 
+MACHINES 
+
+--- Page 16 ---
+
+Under many circumstances the writer, or "text user," needs to 
+reach back to a former condition. This is in the nature of 
+creative work. 
+Virtually all of computerdom is 
+built around this curious convention.* 
+Most computer people will tell you 
+that is the way God intended computers 
+to be used. 
+--
+I 
+However, we can program computers 
+any way we like, if we throw out the 
+system software, and what we are talk­
+ing about is creating ~ ways of do­
+ing things. 
+THE ALTERNATIVE 
+Suppose we create instead an auto­
+matic storage system that takes care 
+of all changes and backtrack automat-ically. As a user makes changes, the 
+changes go directly into the storage 
+system; filed, as it were, chronologi­
+cally.* Now with the proper sort of 
+indexing scheme, the storage facility 
+we've mentioned ought also to be able 
+to deal with the problem of historical 
+backtrack. 
+Think of it this way. An evol­
+ving document is really not just atm 
+block of text characters, Scrabble 
+tiles all in a row; it is an ongoing 
+changing flux. Think of its progress 
+through time as a sort of braid or 
+vortex. ~ _bOC\JM~l(r 'S rt.?', ''-i 
+W ~OL~'l(s-
+0~6-0/((j- r!R~!i> 
+• I.llc:lwling blodt-'!%an•f•r cizc:uitry, :11081: display butte.ring, and t."le disk routines supplied wi.t.11. 
+cc:mven e.ion&l ope.rating systam.s. 
+••(of course, since the storage system assimilates all changes, it becomes nearly 
+the whole "word processor,• except for the uaer' s !raat end.) 
+LITERARY 1/U MACHINES 
+
+--- Page 17 ---
+
+The true storage of text should be in a system that stores each 
+change and fragment individually, assimilating each change as it arrives, but keeping the former changes; integrating them all 
+by means of an indexing method that allows any previous instant 
+to be reconstructed. 
+Think of the process of making editor­
+ial changes as re-twisting this braid 
+when its parts are rearranged, added 
+or subtracted, 
+..... ,., ---.._ 
+and think then of successive versions 
+of the document, at successive in­
+stants of time, as slices in this 
+space-time vortex. 
+LITERARY Very well: the file management system 
+we are talking about automatically 
+keeps track of the changes and the 
+pieces, so that when you ask for a 
+given part of a given version at a 
+given time, it comes to your screen. 
+The user may then refer not merely 
+to the present version of the docu­
+ment; he or she may go back in time to 
+any previous version. The user must 
+also be able to follow a specific sec­
+tion back through time, and study its 
+previous states. 
+MACHINES 
+
+--- Page 18 ---
+
+This can be done efficiently if the user is reading from a com­
+puter screen; since you can set up the system to reconstruct 
+hastily any piece that is wanted at the instant it is wanted. 
+THE PART YOU WANT COMES WHEN YOU ASK FOR IT. 
+PART-POUNCE 
+This system is built around the 
+assumption that you are reading from 
+a screen, not from paper. When you 
+"go to a certain part" of a document, 
+that whole document is not ready to 
+show; yet the system gives you that 
+part instantly, assembling it~~ 
+run from the many fragments of its ac- -tual storage. We call this pounce. You pounce 
+like a cat on a given thing, and it 
+seems to be there, having been con­
+structe d while you are, as it were, in 
+midair. Unlike things which demater­
+ialize when you poW1ce on them, like 
+cotton candy, this materializes when 
+you poWlce on it. I can think of no 
+other example, except perhaps Potemkin 
+villages. 
+• Obviously such a systea daparts frca ccnventional "block" storage, and rather stores material in 
+fragments undar ccntrol of a aa■ter c!irectory indexing by time,-- and other factors. 
+LITERARY 'ffds method stores the documen t canon­
+ically as a system of evolvin g and al­
+temative versions, instant ly construc­
+ted as need from the stored fragments, 
+pointers and lists of our unusual data 
+structure. Thu• there is no "main" 
+version of a thing, just the ongoing 
+accumulation of pieces and changes, 
+soae of whose permutations have names 
+and special linkages. In other words, 
+our system treats all versions of a 
+documetn as views extracted from the 
+same aggregated object. It vill be 
+readily apparent that the only way to 
+do this is effectively to have direct 
+track-and-sector access to the disk 
+system. 
+(footnote continued on next page) 
+MACHINES 
+
+--- Page 19 ---
+
+This is the true structure of text, because text is best viewed 
+as an evolving, Protean structure. 
+You get ~ part you ~ ~; 
+the mistake of the conventional compu­
+ter field has been to assume that the 
+whole document had to be formed and 
+ready. 
+y,~ a.sk ~r 
+~ a~'r~'" Ptrl.r 
+IMI ~ t ~,\lij :&vE;••>, 
+at I et.Y1i ,._ f01'1.t 1' 1,-. f. 
+(continued from previous footnote) 
+This is in contradiatinction to 
+conventional operating syste1118, fron 
+CP/H to OS/370, which typically deliv­
+er the whole file on every request. 
+The illustration depicts the operating 
+system as Frankenstein's monster with 
+a silver tray. (These features may 
+usually be defeated, but that's another ~_d, ~Iii, 
+matter.> tr lt:~CC . ~I/I• ~, .. :r "", 
+(l,tQull t~ICOL 
+LITERARY ANOTHER VISUALIZATION 
+The canonical documents in this 
+system can store teh same material in 
+numerous different versions-- as, for 
+example, in the successive drafts of 
+a novel. 
+While the user of a customary ed­
+iting or word processing system may 
+scroll through an individual document, 
+the user of this system may scroll in 
+rt 1...t.~\S~ of ~Y5~i.~~ 
+~ "' (T J)O 
+And storage space is sa vad by not 
+having to k••P redundant p~. This 
+in itsel~ is not ver/ impori:.ant. 
+MACHINES 
+
+--- Page 20 ---
+
+Such storage permits easy reconstruction of previous states for 
+mental clarification, fresh starts, and transfusions of previous 
+ideas. It also permits multiple uses of the same materials for 
+alternative versions and "boilerplate." 
+time as well as space, watching the 
+changes in a given passage as the sys­
+tem enacts its successive modifica­
+tions. 
+1croll in space 
+Versions of a document set apart for 
+other reasons-- "alternative" versions 
+--may likewise be flipped through or 
+efficiently compared side by side. 
+LITERARY We call this system of storage 
+Prismatic because we may think of a 
+given part, or section, as being pris­
+matically refracted when we pass from 
+one version to another. We believe 
+our Prismatic storage can support vir­
+tually instantaneous retrieval of any 
+portion of any version (historical or 
+alternative). 
+MACHINES 
+
+--- Page 21 ---
+
+This same approach-- storage as an evolving structure with back­track-- may be extended toall forms of data that are created by individuals. 
+ALTERNATIVE VERSIONS 
+This same scheme can be expanded 
+to allow alternative versions-- more 
+than one arrangement of the same ma­
+terials, a facility that writers and 
+programmers would certainly use if it 
+were readily available. Alternative 
+versions (or Alts) are also important 
+in many boilerplate applications, such 
+as law and public relations, where the 
+same materials are churned out repeat­
+edly in different arrangements and 
+variations. A master indexing scheme 
+could greatly reduce storage require­
+ments in these applications, as well 
+as make the relations among the Alts 
+much clearer.~~ 
+Vl 
+Plan 
+V2 
+V3 
+ALTERNATIVE VERSIONS Actually, we may best visualize 
+these alternative versions as a tree 
+in the ongoing braid, a forking ar­
+rangement whereby one document becomes 
+two, each of these daughter documents 
+may in turn become others, etc. 
+•·sy arranging for alternative Vt!rsions to share coanon storage of the document 's fragments, again w save space. 
+LITERARY MACHINES 
+
+--- Page 22 ---
+
+Pictures, and graphical data structures created at a screen, 
+evolve in the same way and should be stored in the same way. 
+SAMENESS AND DIFFERENCE DISPIAY 
+Of course, a facility that holds 
+multiple versions of the same mater­
+ial, and allows historical backtrack, 
+is not terribly useful unless it can 
+help you intercompare them in detail 
+--unless it can show you, word for 
+word, what parts of two versions are 
+the same. 
+Lawyers need this to compare word­
+ings. Congressmen need this to com­
+pare different draft versions of bills. 
+Authors need it to see what has hap­
+pened to specific passages in their 
+writings between drafts. Biologists 
+and anatomists need it to compare cor­
+responding parts of animals (assuming 
+a graphical data base of physiology 
+that shows evolving structure). 
+ANY FORMS OF DATA 
+This storage and indexing by 
+pieces and changes works not merely 
+for text; it can be used for any forms 
+of data structure. Thus if your are designing a building 
+on a computer screen, as architects 
+now do, you may browse through the 
+changing design in the sequence you 
+modified it over time, and create al­
+ternative versions as you like which 
+share the common material. 
+Example. 
+An excellent airplane, the Boeing 
+747, now exists in a dozen or more 
+versions that you may order from the 
+factory. Complex blueprints exist for 
+each of these versions, as well as 
+lists of parts, etc. (Much of this is 
+kept on computers as 3D data struc­
+tures at Boeing, and perhaps quite 
+well; this is simply a convenient ex­
+ample, and no criticism is intended.) 
+• (Such inter~isons would in a 1110n c:cnventional system require writing and invoking search com­
+unds of soma c:caplexity uiong the various related file•.) 
+LITERARY MACHINES 
+
+--- Page 23 ---
+
+As a first step we propose such an evolutionary struc~ure~ the docuplex, as the basic storage structure for electronic literature. 
+Using the data structure and pro­
+grams we have described, it is possi­
+ble to store all the 747 designs as 
+~ unified ~ pool, with the 
+forking-version facility reading the 
+variant designs directly out of this 
+single structure. 
+SIMPLICITY ONE 
+By creating such a capable stor­
+age system, we have greatly simplified 
+the life of the text user. The nuis­
+ance of backup (and the spurious non­
+sense-task of finding names for backup 
+files) are eliminated. But more im­
+portant, we have unified all versions 
+(previous and alternative) in a uni­
+fied structure, the docuplex, permit­
+ting part-pounce on present, past and 
+variatn structures. The user may 
+scroll through any two versions to see 
+corresponding parts; and much more. 
+LITERARY STAGE ONE ALL TOGETHER 
+I have so far presented several 
+new capabilities that I think are im­
+portant: alternative versions and~­
+torical backtrack, both with sameness 
+display; and links. 
+These work together; they have to. 
+The links allow the creation of non­
+sequential writings, bookmarks and 
+jump-structured graphics of many kinds. 
+But if you are going to have links you 
+really need historical backtrack and 
+alternative versions. 
+Why? Because if you make some 
+links on Monday and go on making 
+changes, perhaps on Wednesday you'd 
+like to follow those links into the present version. They'd better still 
+be attached to the right parts, even 
+though the parts may have moved. And 
+the sameness-display allows complex 
+linked alternatives to be studied and 
+intercompared in depth. 
+MACHINES 
+
+--- Page 24 ---
+
+LITERAhY So let us call this Stage One: a 
+system of computer storage that holds 
+pieces of a thing, not big blocks, and 
+assembles them instantly into whatever 
+part of whatever version you ask for; 
+that allows you to create links of any 
+kind you want between any things you 
+want; and shows you which parts are 
+the same between related versions. 
+Let us call such a storage system 
+a hyperfile. 
+You don't have to use these facil-
+ities. 
+blocks 
+ity is 
+it can You can store text in long 
+if you wish. But if the facil­
+there, then the people who need 
+use it. 
+Perhaps most important, these fa­
+cilities provide a building-block for 
+what is to be described in what follows. 
+MACHINES 
+
+--- Page 25 ---
+
+2• 4 A LINKING SYSTEM FOR TEXT AND OTHER DATA 
+Assuming that we are storing materials in such an evolutionary 
+structure, the creation of "links" to the material becomes much 
+easier. 
+LINKS ARE PART OF THE WRITING 
+A link is simply a connection be­
+tween parts of text or other material. 
+It is put in by a human. Links are 
+made by individuals as pathways for 
+the reader's exploration; thus they 
+are parts of the actual document, part 
+of the writing. 
+As perhaps the simplest type of 
+link, a user may create book-marks-­
+places he may want to re-enter text 
+when returning to it. 
+JUMPING ON A LINK JUMP-LINK 
+As another simple first example, 
+let us simply think of a link as some 
+sort of a jump opportunity, like a 
+conventional footnote. An asterisk, 
+say, signals that "there's something 
+to jump to from here." If you point 
+at it with your lightpen (or mouse or 
+whatever), Bingo!-- you're now at the 
+footnote, or whatever else the author 
+took you to. If you don't like it 
+there, hit some sort of a Retuxn But­
+ton and it pops your previous address 
+from a stack, so here you are back 
+where you were and no harm has been 
+done. 
+Reader dags 
+link marker Linked material 
+"1iown Reader returns 
+and continues 
+11ll I dlu ·1ll111111lu, C: 
+''" lh1M>C '""' 11111 * '----~ 
+c-,11111111 1111 ,•,11ll1u1 
+11111 •111ll1111lc 111111 <111 
+11111 11111 dlo •1ll111,11lu1 
+LITERARY ',1111ll11 ,111 c - l11111lch1 ·.,,,• :, 
+1 •111llcu1lc 1h111 cll1011I cll11111h 
+ch•1 111m 11111 1111111lcl1•1 01111 ul11 ·,ll,1rn 
+/1t11 1111 1 duu 
+1•111, 11lcl1•1 11l111 
+·111ll1111lc 1•1111 <111 ,1.,11 
+'"' ,·111111111 
+ll11l ·11111 l11c-,1111ll11 
+MACHINES 
+
+--- Page 26 ---
+
+You may want links for commentaries, bookmarks and placemarkers, 
+footnotes, marginal notes, hypertext jumps and innumerabl e other 
+uses: but they are very hard to keep in place with convent ional 
+computer storage structure. 
+MARGINAL NCJl'ES, 
+SIDE-BY-SIDE WRITING 
+Marginal notes are another simple 
+and important type of link. (Where 
+the "margin" of the screen is--that 
+is, how to show them--is a matter 
+particular to your own screen setup.) 
+PARALLEL LINKED TEXT 
+* LINKS + PRISMATICS-,. USABILITY A user may also make side-by-side 
+connections of other types. On con­
+templating any two pieces of text, he 
+may make a link between them. There­
+after, when he displays either piece 
+of text, and asks ~ ~ the links, 
+a link-symbol is displayed, and the 
+other attached text--if he wishes to 
+see it. 
+Naturally, making a marginal note 
+consists of writing the note and hook­
+ing the link. 
+HYPERTEXT 
+The link facility gives us much 
+more than the attachment of mere odds 
+and ends. It perm.its fully non-sequen­
+tial writing, or hypertext. 
+Most computer schemes for linkage face the terrible problem of "updat­
+ing" the links as text is modified and successive versions come in-co oei:ig. 
+The present scheme dodges this problem smartly (at least at the loca~ level): 
+a link is attached, not to a positional address in a given version, ~ut to 
+specific characters, and simply stays with them wherever they go. ~~us 
+Prismatic storage solves a considerable problem. 
+LITERARY MACHINES 
+
+--- Page 27 ---
+
+However, the evolutionary storage we have already described allows 
+any links to be associated firmly with the pieces of data in any 
+evolving structure, wherever those pieces may migrate to as changes 
+occur. 
+\ This simple facility- the jump­
+link capability-- leads immediately 
+to all sorts of new text forms: for 
+scholarship, for teaching, for fic­
+tion, for hyper-poetry. This makes 
+possible a certain free-form serendi­
+pitous browsing. 
+~~e.1'.~r ~ ~ ----------"-----------------=-~'--_-+_._:.;;, ____ _ 
+t• ICS (continued from previous footnote) 
+/ Thus the link stays 
+where you put it through 
+historical backtrack and 
+in alternative versions-­
+if you choose to see it. Jorward throush versions; ~lj·f · --:L ': 
+backward throU,Bh version,; 
+also "sideway&" to alternative ver1ion.r. 
+Essentially, the link seizes a point or span (or any other structure) 
+in the Prismatic Document and holds to it. Links may be refractively fol­
+lowed from a point or span in one version to corresponding places in any 
+other version. Thus a link to one version of a Prismatic Document is a 
+link to all versions. 
+The effects, then, of links, alts 
+and backtrack are in some sense multi­
+plicative: together they give you a 
+united facility of great power. 
+LITERARY Z/2Z MACHINES 
+
+--- Page 28 ---
+
+And any types of links may be created. 
+ANY TYPES OF LINK$ 
+A proper system should allow any 
+types of link whatever, and there are 
+myriads of types. 
+In principle we allow any types 
+of link to be defined by the sophisti­
+cated user. These include point-to­
+point links, point-to-span, and span­
+to-span, having any separate names and 
+END-SETS 
+Links may attach to other links. 
+Thus we have the concept of an end-set, 
+the several types of object that a 
+given link may attach to. 
+Consider, for example, an arbi-
+trary type of link which we may call 
+a "wuffle." A wuffle, let us say, 
+connects a span of text, a picture, 
+and a footnote. These are the end2arts; 
+together they constitute a wuffle's 
+end-set. (-~i 
+LITERARY .c..z 4, f•&1v-<.. 
+1~4~ .. , ,~l-, functions desired. We also allow 
+links with multiple endpoints. 
+lr"Y (.HI~ Of t IN(_ 
+~ 
+Directionality, if any, is given in 
+the link-type definition. Note that 
+end-parts may not hang together as 
+they evolve (e.g. text sections}: 
+" fl"•rtErlA_l(. "8W ~-=-., H --· -----
+"~-~--·-~J"'"' t-l~ 
+~ )/ -- . .svl•1-) -· --
+MACHINES 
+
+--- Page 29 ---
+
+LINKS AND FRONT ENDS 
+How to show links is a Front-End -Function. So is the problem of keep-
+ing track of where you have been as 
+you browsed; the front end must manage 
+your stacks for you. 
+D 
+rT~( -,11~ ~\..Dtes:s~r 
+;o ~ 11\'<1' 
+LITERARY LINKING AMONGST ALL DATA TYPES 
+~lL ~ff.~ ~t<Jot1Jfl~ 
+MI\Y &c "'"-t.t,eJ 
+It is vital that a general system 
+not have restrictions. For instance, 
+why should you just have links on 
+text? We believe you should be able 
+to put footnotes and marginal notes on 
+pictures, on music-- on any forms of 
+data. 
+MACHINES 
+
+--- Page 30 ---
+
+2.s THE DOCUMENT CONVENTION 
+From these beginnings, it will be possible to create many levels of 
+organization and overlay-- but first we will adopt by convention 
+a fundamental unit. 
+So far we allow the storage of any 
+sort of text (etc.) and any sort of 
+links bet~en points and passages of 
+text. If anybody may put in and change 
+anything, we stand to get simply a cha­
+otic blur, a single muddy pool. 
+The solution is straightforward 
+and traditional, and derives from lit­
+erature as we have known it. We make 
+sure that everything stored is divided 
+precisely into separate documents. 
+An interesting choice has been 
+made in the design of this structure. 
+A document consists of anything 
+that someone wishes to store. A docu­
+ment is something designated by a per­
+son to~ a document, containing text 
+and/or links that he has created. We 
+call a thing a "document" whether it 
+contains text, or links, or both. Thus the Gettysburg Address is a 
+document; "Jabberwocky" is a document; 
+and a set of links between them, were 
+someone to create it, could be yet a 
+separate document. 
+By this convention, then, every­
+thing in the system is a document and 
+has an owner. No free-floating mater­
+ials exist. What this convention 
+really does is stress the singularity 
+of each document, its external and in­
+ternal borders. Thus, we focus on the 
+integrity of the "document" as we've 
+known it. Evolutionary continuity is 
+unambiguous. 
+Every document has an owner. The 
+rightful copyright holder, or someone 
+who has permission from the copyright 
+holder and pays for storage, is essen­
+tially the owner as far as the system 
+is concerned. Only the owner has a 
+right to change or withdraw a document. 
+LITERARY 2/ts MACHINES 
+
+--- Page 31 ---
+
+We will call this unit a "document." It has an owner and (ordi­narily) a name. 
+It normally consists of contents-- text, graphics, music, etc.-­
+and links to other documents. 
+(Although there are ways that others 
+may conveniently have the use of 
+changed versions that suit their needs, 
+as we will see in a later section.) 
+Ancient documents are owned by 
+the system-- or preferably by some 
+high-minded literary body that over­
+sees their royalties (to be discussed 
+later). 
+LITERARY OWNERSHIP OF LINKS 
+Links may be created within or be­
+tween documents. But each link resides 
+in one place. 
+Links, just like text, are owned. 
+Every link is part of a particular doc­
+ument and has an owner. 
+However, links in one document may 
+attach to another document. 
+MACHINES 
+
+--- Page 32 ---
+
+Every link, then, is part of a document. 
+Putting it another way, a document consists of its contents and its 
+out-links. 
+And that's all. 
+Ordinarily a document consits of its 
+contents (including history and alterna­
+tives} and its out-links. These out­
+links are under control of its owner, 
+whereas its in-links are not.~ 
+f·--\o ut~ ~ ~, 
+'lC' More elaborate cases are possible, how- ~ g_ 
+ever. For instance, links between doc- ~ y 
+uments may reside in yet others. 
+LITERARY Z/l7 ~•1.t.. .,--rl~ 
+~r~·ri . . 
+~I 
+MACHINES 
+
+--- Page 33 ---
+
+2.6 COMPOUND DOCUMENTS 
+This ground rule allows us to have complex multi-level document 
+structures-- criss-crossing superdocuments of many parts-­
+collected in new structural wholes. 
+Once you have the package, the 
+docuplex that allows linkage and back­
+track, why not extend it? 
+Why not allow anyone to create 
+links between documents, allowing you 
+to jump straight from one to another? 
+Given the exact documant boundar­
+ies and ownership alr•ady mentioned, 
+we can now create an orderly arrange­
+:nent permitting far more complex docu­
+ments to be stored. We also provide 
+an arrangement allowing other individ­
+uals freely to make their own modifi­
+cations on the stored documants. This 
+we do by allowing so-<:alled •compound 
+documents.• 
+The logic ot theN compound docu­
+ments is simple and d•rive ■ from the 
+concept of document ownership. Every 
+document has an owner. Tha integrity 
+of this docwnent is maintained: no 
+one may change it but the owner. 
+But saneone elsa may create a 
+document which quotes it a■ mucb as 
+desired. This rnechan1sm we call the ~-window or quote-link. Through a 
+"wfiiaown in the new docwiiant we see a 
+portion ot 1~ old. iv,N~ '."ffi 
+/ >// 
+Thus a naw document may consist 
+of the quote-links and new material, rr any. 
+:I r~ '---· ~"4::-..:_;-,~ 
+' . -, -----
+Through the same document conven­
+tions, the compound structures men­
+tioned earlier maintain the same con­
+ventions of integrity and ownership. 
+LITERARY 1/28 MACHINES 
+
+--- Page 34 ---
+
+Each collection is likewise a document, and likewise has an owner. 
+The secondary document, too, has its own integrity, though the windowed 
+materials are still ?art of the orig­
+inal document. 
+A document may have a window to 
+another document, and that one to yet 
+another, indefinitely. Thus A con~ tains part of a, and so on. One docu­
+:nent can be built upon another, and 
+yet another document can be built upon that one, indefinitely: each having 
+links to what was already in place. 
+Anything stored by one user on the 
+system may be quoted-- adopted into a 
+document-- by anot.~er person writing on 
+the system (provided the second user 
+has legitimate access). This freedom of windowing applies, of course, to all 
+forms of data, including ?ictures, ~us­ical notation, etc. Think of the ?resent document as 
+a sheet of glass. It may have ·..rriting 
+?ainted on it by t.118 present author: i: ~ay have wi.;ldows to something else, 
+in turn made of more layers of painted 
+glass, with writing on each. 
+ltep throqh 
+to other docu.men14 
+and uplore them. 
+A reader JUay either explore the 
+immediate document, or ~step thro~gh 
+the window~ to explore the next docu­
+ment, or the one beyond. After explor­
+ing a further doc-..nnent, t.~e reader may return to the one t..1la.t showed hi.:n into it, or proceed on tangents that become available. 
+LITERARY 'Z/2? MACHINES 
+
+--- Page 35 ---
+
+Document A can include Document B, even though Document Bis 
+owned er_ someone else. 
+By this simple, sweeping mechan­
+ism, all manner of different require­
+ments and specialized uses are reduced 
+to a single structure. Each layer of 
+windows may have, as it were, colored 
+cellophane or opaquing on it. Only 
+when you stip through the window-­
+which you a ways may at any time-- do 
+you reach the original. But stepping 
+through the window means turning one 
+glass page and going on in the next. 
+Now you are in another work. 
+Examele. The annual report of a 
+corporat.1.on has a brief paragraph on 
+every division of the company, with 
+summary operating figures for the year. 
+These paragraphs and figures are quo­
+ted from other documents which explain 
+the :natters more fully: the reader may easily step through to study them fur­
+ther. 
+Ex~le. A children's story is il­lustraeewith pictures. If the child 
+wants to "reach through the window," 
+each picture is found to be part of a 
+larger picture, with another story at­
+tached. 
+The windows of a windowing docu­
+ment are themselves actually particular 
+links between documents. No copy is 
+made of the quoted material; rather, a 
+quote-link symbol (or its essential e­
+quivalent) is placed ih the stored sym­
+bol-train of the quoting document. This 
+quotation does not affect the integrity 
+or uniqueness of the original document, 
+since no copy is made. Nor does it af­
+fect the ownership. 
+LAYERS OF WINDOWING TEXT. Each horizontal line is a document. 
+In a library: 
+top document 
+windowing to 
+----------,.----~ 
+l"llfflfflt'llla ri~. ------------------------
+quota ti om. 
+oriitinal9. 
+ROVE OPTIONS --•-i----flllllllll----• 
+field documents. 
+• ,~•. Rl",·i:sion 
+: I,, 
+replae~ment report, 
+holding 
+cha~eable data, 
+' . .. .. 
+•\' '.•· . ' ' ' . ' '' . ' 9ubreporu, 
+and 
+ac-counu. 
+·: Re,·ision 
+hv 
+rearranl!ement 
+
+--- Page 36 ---
+
+(Note that these methods of stor­
+age save a great deal of space, if the 
+same material is used in numerous docu­
+ments.) 
+The use of the special links dram­
+atical.ly simplifies a host of problems. 
+~o copying operations are required 
+among the documents throughout the sys­
+tem, and thus the problems of distri­
+buted update, so familiar throughout 
+the computer world, are obviated. (But 
+they do reappear on a later level.) 
+Since quoted material only has to 
+reside in its place of origin, and not 
+in the other documents that quote it, 
+other documents that quote it may be 
+automatically •updated• when its owner 
+changes it. 
+Note also, however, that a window 
+may be fixed to a document at a certain 
+point in time, in which case revisions 
+are seen by the user only when he asks, 
+"'flh.at has this passage become?" DERIVATIVE DOCUMENTS 
+The integrity of each document is 
+maintained by these separations: deri­
+vative documents are pei:manently de­
+fined in terms of the originals and the 
+changes. (And stored on that basis.) 
+A document may consist merely of 
+changes to another document. Thus the 
+modified Gettysburg Address published 
+in MAD by Doodles Weaver may be t.~ought 
+of as two documents: the original, and 
+the changes. 
+ALTERNATIVE VERSIONS BY NON-OWNERS 
+~ document owner may create alter­
+native.arrangements of the same mater­ial, all within the same document.* 
+Another user, however, is free to 
+create his own alternative version of 
+the document he does not own. This, 
+then, becomes a windowing document 
+using the same materials. 
+* The official naming-mechanism of t.~e 
+svstem has "document" and "version" 
+fields. See "Tumbling through t~e 
+Docuverse," a Chap~er 4. 
+LITERARY z;,, MACHINES 
+
+--- Page 37 ---
+
+-INTERCOMPARISON DOCUMENTS 
+A doc:wnent that points out rela­
+tions between other doc:uments we may 
+calJ. an "intercomparison document." 
+Such documents may be easily created, 
+say, to point out relations between 
+the Bible and the Dead Sea Scrolls. 
+Ql~\~o 
+o,--+c:Jt,; c:2 
+i:::::\ ~ -'--"' ____ _ --· 
+COMPOUNDING OF OTHER LINK TYPES 
+'Any other link types (beside win­
+dows) may likewise go from one docu­
+ment to another, and. interweave with 
+quote-links. 
+Note that links, like text and picturs, may£! quoted. 
+These st:J:Ucturas may of course 
+nest ... This makes possible compljund 
+documents to any remove, where one 
+document links to another, and so on. 
+One document, embracing another, 
+takes it into itself. 
+iv+\{ ~, H1 
+I 
+~ j I And this creates a basis for all 
+kinds of hypertext- linked, paraJ.lal, 
+windowing. 
+~--T•· ..... ·•··••·•--·-·•· 
+□------------------
+COMPOUND NESTED LINKS 
+.;( AN INTERESTING WORLD 
+It will be noted that we have 
+here defined an interesting and rich 
+sort of world-- a world in which we 
+are relieved of complications from 
+conventional computer filing; yet 
+we have greatly enhanced abilities 
+to specify and express compound re­
+lations of every sort. 
+~ !A>Olt C.j) 0 F . ' 1 lJ re ,g_,., ~'~ I \ 
+' /7 
+.,, 
+MACHINES 
+
+--- Page 38 ---
+
+••• SOT A SIMPLE ONE 
+~his world nevertheless remains 
+simple in design. The virtualitr is 
+simple in structure and repeats lll 
+layers. 
+LITERARY MACHINES 
+
+--- Page 39 ---
+
+2:7 ELECTRONIC PUBLISHING 
+MAKING THE LITERARY SYSTEM UNIVERSAL 
+Beyond its use as a private facility, we intend that this system be usable as a publication system. Thus a carefully designed system of publication, surprisingly like that of paper, has been worked out. 
+The orderliness and power of this approach are very suggestive. Given the hyperfile with links that we just expoun­
+ded: Why can't we extend it into a full publishing system? 
+Suppose that the hyper-documents al­ready stored could be reached and used by anyone. All that we need additionally is the ability to create links among them-­to make your own bookmarks and marginal notes, to quote from them by direct ex­cision. And why not, indeed, allow users 
+to publish assemblies and collections of 
+compound documents building on the others? 
+Very well. Let us try to put to­gether a publishing system-- that is, an overall arrangement where some of the 
+documents stored in the "true" structure 
+I have described may be made available publicly. 
+LITERARY What does this mean exactly? Well, 
+a publishing system, as we see it, 
+should include provisions for privacy, copyright, royalty and accounting. 
+PUBLIC AND PRIVATE 
+The idea of "publication" in this 
+system, as it is clarified below, will 
+show what we mean by both private and public documents. 
+MACHINES 
+
+--- Page 40 ---
+
+We can therefore have a system of electronic publishing that feeds 
+to your computer screen exactly what you ask for, as soon as you 
+ask for it; with royalties divided between the document owners in 
+exact proportion to how much of their materials are transmitted or 
+used. 
+A document may be private~ pub­
+lished. A published document may in­
+clude text, links, alternative versions 
+and historical backtrack. But it need 
+not. 
+Any user may store anything on the 
+system. Unless specified otherwise it 
+is a private document. A private docu­
+ment may be read and linked-to only by 
+the owner and his associates. A pub­
+lished document is available to anyone, 
+and may be read and linked-to by anyone. 
+INTERNAL COPYRIGHT CONVENTION 
+To bypass legal problems, we intend 
+to establish a copyright convention 
+internal to the network and agreed upon 
+by all participants. To wit, if you 
+publish a thing through the network, you 
+have to agree to the same rules as 
+everybody else-- which are intended to 
+create a fair balance of incentives. 
+More on this later, when the choices des­
+cribed here will be further discussed. 
+LITERARY LINKING TO WHAT-HAVE-YOU 
+Any user may read, or otherwise em­
+ploy, any published document on the sys­
+tem, or any private document to which he 
+has legitimate access. He can make any 
+kind of links to it from his own cocu­
+ments, private or not. 
+NO CONTROL OVER IN-LINKS 
+Accessibility and free linking make 
+a two-sided coin. On the one hand, each 
+user is free to link to anything priv­
+ately or publicly. By the same token, 
+each author of a published work is re­
+linquishing the right to control links 
+into that work. This relinquishment is 
+part of the publishing contract. 
+MACHINES 
+
+--- Page 41 ---
+
+"Private" materials are available only to their owners or designees; 
+"published" materials are available to anyone, yielding a royalty to the owners. 
+THE ACT OF PUBLICATION 
+If the user chooses to publish a 
+document, he may do so with relative 
+ease, making it available to anyone 
+throughout the network. It is then a 
+published document. 
+Because publication is an important 
+act, both for authors and readers, we 
+make publication a solemn event, to be 
+undertaken cautiously. Since publishing 
+can be instantaneous and unrestricted, 
+merely a "publish" button on the con­
+sole could do it--but the dangers of 
+rash publication to an individual's rep­
+utation and career could be great. Some 
+formalized technique would therefore be 
+required for "coimnitting to publish"-­
+probably a ceremony and signature; pre­
+sumably signing a contract on something 
+very like a credit-card triplicate slip. 
+The author signs an "I hereby publish" 
+form, after which not only is the docu­
+ment universally available, but he can't 
+withdraw it. 
+LITERARY NO WITHDRAWAL; SUPERSESSION; 
+OTHERS' LINKS 
+Publishing is a solemn act, and it 
+is in the common interest that a thing 
+once published stay published, as in the 
+world of paper. Consequently its author. 
+may not withdraw it except by lengthy 
+due process. 
+However, the author may readily 
+publish a superseding document, but the 
+former version remains on the network. 
+This is vital because of the links other 
+users may have made to it--which can 
+reach through from the previous version 
+to which they are attached into the 
+newer version. 
+SUPERSESSION WITH NOTICE 
+It can easily be assured that fresh 
+readers turning to an old version of a 
+document may be directed to the new, un­
+less they have reason to consult the old. 
+MACHINES 
+
+--- Page 42 ---
+
+Private documents can link and window to public ones. 
+PRIVASHING 
+An author who wishes to render his 
+work universally available, but wishes 
+also to retain the right to withdraw it 
+at any time, has a simple means for so 
+doing. He simply designates his docu­
+ment as a private document with unres­
+tricted distribution. Anyone may have 
+access to it or use it, but the owner is 
+free to withdraw it or change it irre­
+callably at any time. 
+No royalty is received for the use 
+of privashed documents. 
+PRIVATE SALE OF INFORMATION 
+Those information purveyors not sat­
+isfied with our private rates are free to 
+store what they like as private encoded 
+documents and then sell access, or sell 
+the secret code to make them readable, or 
+whatever. This is a private transaction 
+and does not involve the system. 
+LITERARY ROYALTY FOR USE 
+In our planned service, a standard 
+proportional fee is paid automatically 
+by the user to the owner every time a 
+fragment is summoned. Each owner must 
+consent to the standard royalty-- say, a 
+few cents per screen hour-- and each 
+reader contributes those few cents auto­
+matically as he reads along. If the 
+back-end cost of servicing a user is, 
+say, $2 per screen-hour, then the royal­
+ty will be 5¢ to 10¢ for that hour. This 
+is deducted automatically from the back­
+end fees. 
+Since there is no controlling.what 
+happens at the user end, this royalty 
+should be largely based on transmission 
+time. An hour, five minutes, or one sec­
+ond of a thing, each contribute propor­
+tionally to the copyright holders' ac­
+counts. (The question of whether to al­
+low different rates of royalty will be 
+discussed later.) 
+The royalty goes to the owner. We 
+say "owner" here to avoid having to dis­
+tinguish between authors and publishers; 
+but this is a matter cf private arrange­
+ments that is of no concern at the sys­
+tem level. 
+MACHINES 
+
+--- Page 43 ---
+
+This is a radical and daring idea; a new form of reading and writing, in a way just like the old, with quotations and marginalia ~nd citations. Yet it will also be socially self-constructing into a vast new traversible framework, a new literature. 
+THE REAL POWER: 
+PUBLISHING COMPOUND DOCUMENTS 
+The windowing approaches already mentioned automatically furnish a general solution to the "copyright problem" with regard to quotation and citation, simply by this means: authors who are windowed automatically get royalties as well. If the windowing document is electronically 
+published, royalties are paid to the own­er of each document seen in proportion to its use. 
+Since the copyright holder gets an automatic royalty, anything may~ quoted without further permission. That is, permission has already been granted: for part of the publication contract is the provision, "I agree that anyone may link and window to my document." Publication through such a net requires your permis­sion for your work to be quoted ad lib. You publish something, anyone c~u;;-it, you always get a royalty automatically. Fair. PUBLISHING MODIFIED VERSIONS 
+You can create ~published docu­ments~ of old ones indefinitely, 
+making whatever changes seem appropriate 
+without damaging the originals. 
+This means a whole new pluralistic publishing form. If anything which is already published can be included in any­thing newly published, any new viewpoint can be fairly presented. (Especially if the reader can always say, "Show me what this was originally.•• J 
+If a modified document is read, the original owner and the modifier split the royalty in proportion to who wrote what, as determined automatically. (For royal­ties on links, see "Tuning," Chapter 2.) 
+For example, my great-grandfather, 
+Edmund Gale Jewett, believed that one word in Hamlet was incorrect. (It should have been siege of troubles, not "sea" of trou­bles, in the well-known soliloquy.) 
+Very well: if Hamlet is already on the system, then E.G. Jewett could pub­lish his own Hamlet very easily: a quote­link to the whole original, except for 
+LITERARY 2/fiB'" which is chang;;~;~;~S 
+
+--- Page 44 ---
+
+Given that anything on such a network may be available instantly , 
+such an arrangement promises an extraordinary new level of capa­bility. For not only may simple documents be accessed at once, 
+but compounded and windowing documents may be overlaid on anything --promising a new degree of understandability through what is 
+added later. 
+Now, the obvious rules of the road 
+should be as follows: 
+1. Shakespeare's Hamlet is of course 
+unchanged and available instantly. 
+2. Jewett's modified version of Ham­
+let, composed almost entirely of the 
+original, is also available instantly. 
+{Jewett may give it any title he 
+wants.) 
+3. Shakespeare-- or presumably the 
+Authors' Fund--gets the royalties for 
+whatever of Shakespeare's Hamlet is 
+summoned by readers. 
+4. When people read Jewett's Hamlet, 
+the Authors' Fund still gets the roy­
+alty on Shakespeare's behalf almost 
+all the time. But Jewett gets a min­
+ute proportional royalty for the 
+change he has made, whenever a reader 
+encounters that part. 5. Anyone reading Jewett' s Hamlet can 
+say, "Show me the original of this 
+next to it," or just "Take me to the 
+original. " 
+6. Anyone reading Shakespeare's Ham­
+let can say: "What documents have 
+links to this?" or "Are there any al­
+ternative versions?" and get a list 
+that includes Jewett' s version.~ 
+SECURITY RAMIFICATIONS OF WINDOWING 
+These ideas simplify the creation 
+of rationally-ordered document dissemi­
+nation systems with clear-cut security. 
+A document can only window documents with 
+the same, or lesser, security level. For 
+instance, a private document may window a 
+published document, but not vice versa. 
+• Yot• alao the IIOdeat coat should Jewatt publish thia1 the stora9e cost tor a few hundred bytes 
+(ID, pointers and chAngea). 
+LITERARY 2/31 MACHINES 
+
+--- Page 45 ---
+
+It is our unusual hope and vision that this, with its simplicity of approach and efficiency of implementation, may become the standard publishing medium of the future. 
+SHOWING AND SIEVmG m-LINKS 
+The reader should be able to ask, for a given document or place in the doc­ument, "What connects here from other documents?"-- and be shown all these out­side connections without appreciable delay. H 
+But there may be too many. Indeed, for "Alice in Wonderland" or the U.S. Constitution, the number could be in the squillions. 
+Thus it becomes necessary to apply some kind of filter, saying, "What links come in from Spain? From last week? From last year in Marienbad?"-- and see the number of such links at once, fol­lo~d by the linked documents themselves if desired. 
+This must all be fast enough to please the impatient on-line user. And we believe it can be done. This filter­ing by different attributes we call "sieving"; and it can only be set up for a comparatively small number of traits-­say, location and author and time.*• 
+• Technically Kn<>wledgeable readers may note that E.h!,! is the hardest feature. This is the stopper. But ,,.. believe it can be done. 
+•• Of course, any amount of additional sieving can be put in at the front end. 
+LITERARY MACHINES 
+
+--- Page 46 ---
+
+ALL END-USE IS LEGITIMATE 
+The user may employ any terminal, 
+graphical or printing. Viewing-methods 
+and manipulations are up to the terminal 
+designer. No restraint is contemplated 
+as to what use may be made of the mater­
+ials found on the system, since no res­
+traint is possible. 
+There is no way whatever to ascer­
+tain or control what happens at the users' 
+terminals. Therefore perforce all use 
+whatever is legitimate, and anyone who 
+plans to be vulnerable to "misuse," what­
+ever he thinks that may be, had better 
+keep his stuff off the system. PRINTOUT AT USER TERMINAL 
+LITERARY Users are thus free to make printed 
+copies for their own use. Note that if 
+a user prints out a document, he has paid 
+a royalty on its transmission. It is 
+paid~' just as a paperback bought at 
+the drugstore has had its royalty paid 
+up. And if a copyright holder cannot be 
+satisfied with this arrangement-- even 
+knowing no other is possible-- he had 
+better withhold his stuff from this sys­
+tem. 
+Note also that he who makes a paper 
+copy is losing all dynamic link connec­
+tions, and is left with the inert, non­
+interactive copy. And while sane of you 
+may have trouble believing it, that will 
+be a considerable deprivation in the 
+world we are talking about. 
+MACHINES 
+
+--- Page 47 ---
+
+WHAT'S A PUBLISHER? 
+Traditionally, an author is someone 
+who creates a work, whether or not on his 
+own initiative. A publisher is a busi­
+nessman or business firm that takes the 
+business initiatives, deciding to publish 
+the work, fronting the money to print, 
+warehouse, and advertise. He, or it, also assumes certain legal risks from 
+which he usually guards the author. The publisher may also encourage and cajole 
+the author, buck him up, advance him 
+money for work unfinished, and finally erect a plaque to his memory on the Hotel 
+Chelsea. 
+Ownership and copyright are split 
+between author and publisher according to their own negotiated private arrangement. 
+If compound united hypertext is the printing press of the future, the pub­lisher of the future can do all these things in exactly the same way. Except 
+now there is no "printing and warehous­
+ing," but a certain required minimum disk rental. Thus a "publisher" is someone 
+who pays for the rapid accessibility of materials and benefits from their use 
+along with the author. ON-LINE BOOKS AND MAGAZINES 
+Just the fact that things are on 
+an electronic system does not threaten 
+their integrity; indeed, every unit fully retains its integrity in the 
+present system. 
+A book is still a comparatively 
+large unit of writing or anthology, 
+written and published by specific peo­pel on specific dates. 
+A magazine ~ journal is still a collection of shorter pieces (perhaps 
+windowing from elsewhere) which is regularly edited by the same person or people, and regularly published at a specific time. 
+Magazines and journals will have 
+great importance in such a publishing 
+system (as they do in the paper world) 
+because they will furnish stabilized 
+views of the world, offering a predic­table kind of material, and bringing in, evaluating, and now windowing, 
+ideas from all over. 
+LITERARY 2/'12. MACHINES 
+
+--- Page 48 ---
+
+DIRECTORIES AND CATEGORIE S 
+Two system directories , main­
+tained by the system itself, are anti­
+cipated: author and title, no more. 
+Other directories would essen­
+tially involve categorization, like 
+the Dewey Decimal and Library of Con­
+gress catalog systems, or the Yellow 
+Pages of the phone book. 
+There is nothing wrong with cate­
+gorization. It is, however, by its 
+nature transient: category systems 
+have a half-life, and categorizations 
+begin to look fairly stupid after a 
+few years. (Indeed, simple categori­
+zations of computer articles in compu­
+ter bibliographies of ten years ago 
+have alr~ady begun to look stupid.) 
+The army designation of "Pong Balls, 
+Ping" has a certain m1iversal charac­
+ter to it. 
+All category-systems make some 
+sense, few stay good for long. (How­
+ever, the Yellow Pages categories are 
+an interesting exception, being dread­
+ful to begin with, and, though sup­
+posedly updated from time to time, do 
+not seem to improve. Try to find from 
+them the nearest place to make paper 
+copies.) 
+What is the solution for our sys­
+tem? Keep categorizing directories 
+~ of ~ system level. This is user 
+LITERARY business; let them handle it and col­
+lect royalties . 
+Provision will exist for anyone 
+to publish his own document lists, 
+categorized in any way he imagines, 
+and have users bounce through them in 
+search of whatever they think they may 
+find. 
+PARTIAL PUBLICATION 
+A whole document need not be pub­
+lished. That is, someone may publish 
+what to him is only part of a document, 
+keeping the rest private. Very well: 
+now his private document is windowing 
+into the materials he has published as 
+part of the "real11 larger document that 
+still appears on his screen. 
+Historical backtrack alts, etc., 
+may also be held privately in a common 
+pool with documents which have entered 
+the "published" world. 
+MACHINES 
+
+--- Page 49 ---
+
+USE WITH OTHER DATA STORES 
+There are many purveyors of les­
+ser services who say, in effect, "Ha 
+ha, we've got the copyrighted mater­
+ial , you can go hang. " 
+Maybe yes, maybe no. Suppose 
+that Company Y has some key legal doc­
+ument on line--say, the Napoleonic 
+Code-- and you need to make marginal 
+notes; they offer no such facility. 
+Well then! Connect to ours and 
+theirs at the same time. Write your 
+marginal notes on our system, with the 
+linking information; then your front 
+end can call up the Controlled Docu­
+ment and show it with the notes you've 
+stored on our system. 
+In the general case, then, we can 
+marry our data structures and linking 
+facility even to the dog-in-the-manger 
+on-line material whose purveyours do 
+not wish to cooperate. 
+LITERARY Or suppose you have private ma­
+terial you do not wish to expose 
+through communication lines, even in 
+encrypted form. Nevertheless, the 
+system we are discussing can help you 
+with detailed linkages, backtracks, 
+etc., even though it runs on a public 
+system: for you may use its indexing 
+facilities to control your data, sight 
+unseen. Your data stays home, blind 
+indexing is stored on the net under 
+your control-- with the contents it 
+controls wholly unknowable to any par­
+ties but you. 
+ru-t 
+1..,1NK.¢e 
+~ 1,~ron\(:~ c.. 
+F•t.H(G-
+MACHINES 
+
+--- Page 50 ---
+
+LITERARY VIDEODISC CONNECTIONS 
+There has been a great deal of 
+whoop-te-do recently about videodiscs , 
+the storage devices that hold one or 
+more hours of TV on a platter. Sever­
+al of these are now available and in­
+compatible. Some of them offer freeze­
+frame and random frame addressability. 
+Very well: they are a fast image play­
+out that can be hooked up to our in­
+dexing for complex purposes. 
+(The widely-touted notion that 
+videodiscs will be useful for text li­
+braries seems a little silly, since 
+they make it possible to access only 
+what you actually have right there, 
+while a hypertext network could allow 
+immediate access to everything on it; 
+a vast difference.) 
+( (Another use of the term "video­
+disc," causing total confusion, is its 
+use to refer to certain high-density 
+write-once digital disks under devel­
+opment by Phillips. we are often 
+asked whether these "videodiscs" will 
+be useful for our system, and the an­
+s'11i'er is yes, but they aren't video­
+discs.)) 
+MACHINES 
+
+--- Page 51 ---
+
+2.a DISTRIBUTION AND NETWORKING 
+It might be possible to do all this out of one feeder machine, but there are disadvantages. 
+In the previous sections of this chapter we have discussed virtuality, in particular, the conceptual struc­ture of the proposed system. So far, the service might be provided from a single computer, or "centralized data bank." We have more or less assumed a single-processor version of this sys­tem, one which easily treats all docu­:nents and their versions as: an inter­connected whole because they are stored in the same place. 
+However, there are fairly delin­ite limits on what one machine can hold and the number of users it can crovtde services to. For the ser­vices described here to be seriously expanded to large numbers, it will be necessary to •network• the service through multiple computers distribu­ted throughout the nation, and/or the world. 
+The system should be able to grow without size limit, containing in the body of available writings whatever anyone has stored from any place on the network. 
+So ..a turn to the idea of storing the materials on a network of compu­ters. But we do not want the virtual­ity to change. A user should get any­thing he asks for an instant after the request, even if it comes from tar away- ~owever widely scattered its 
+LITERARY parts ~ay be in their storage ership, even if some parts of from one faraway place, other from other faraway places. and own­it come parts 
+All of storage near and far be­comes a united whole- what is now called a "distributed data base." Ac­tual locations are essentially invisi­ble to the user: or, in that tradi­tional phrase, "You don't care where it's stored." The documents and their links unite into what is essentially a swirling complex of equi-accessible unity, a single great universal text and data grid, or, as we call it, a "docuverse . " 
+MACHINES 
+
+--- Page 52 ---
+
+In principle it is possible to extend this system of storage and 
+publication to a whole network of feeder computers. 
+A user at any location may store 
+what he or she wishes; links may be 
+created by anyone, from anywhere, to 
+bring a document (or part of one) to 
+the inquiring user. Given today's 
+network technologies, this is not 
+really difficult; this part of the 
+system-- the immediate delivery of 
+anything from within a large arbitrary 
+network of computers-- is not far­
+fetched. From a nuts-and-bolts point 
+of view the material is more effi­
+ciently dispersed among holding sta­
+tions united by a communication net­
+work. This is essentially state of 
+the art. 
+LITERARY From the software point of view 
+needing to Wlite the documents 
+into a single, instantly-available 
+docuverse-- a number of challenges 
+sxist. 
+One is that multiple copies of 
+each document must be distributed a­
+bout the network for safety-- in a 
+shifting distribution tha.t keeps up 
+with demand and other needs. Another 
+i• that these copies- even with 
+their historical-trace backpacks-­
+:nust be updated in place. And a 
+change mu•t scnehow be known through­
+out the n•~rk the instant it hap­
+pens. with new things at once assim­
+ilated to the great corpus. 
+Mvt.11 N IH)E. !:)l,:;n( ,-s~,,~ 
+l,tT'fi f~q Ctf ~ 
+MACHINES 
+
+--- Page 53 ---
+
+The stored literary contents of all the computers on the network may be continually united into a single, accessible whole. 
+Moreover, while copies of all infoJ:mation can.not be stored in eac.n location, enough of a trace or string 
+must be in each place to pull in 
+whatever is needed from wherever it is-a •ripcord• to unleash any se­lected document. 
+(Schemes for all these needs exist, having been worked out within our proprietary data-structure frame­work.) 
+LITERARY m=TWOR!C CONNECTIONS 
+Essentially tha network will 
+have two connection speeds: the fast lin•• that unit• the station•, and the slow linka.to uaera. 
+MACHINES 
+
+--- Page 54 ---
+
+For connection to users, the con­
+templated network should of course 
+hook up by whatever channels are most 
+convenient for them: directly (at 
+Stations), and via camnunication links 
+such as Telenet• and telephone. It 
+should also tie to other digital net­
+works, either in the amateur market 
+(such as The Source and Pc-let), or the 
+professional world (such as ARP.Anet). 
+It is intended that the contemplated 
+ser1ice will hook up to all ethical 
+vendors who wish to offer gateway ser­
+vice to our docuverse. 
+LITERARY Xanadu 
+System 
+I I I I 
+I direct printin1 tuminal 
+' ', ', . ~ .. Jumb .. 
+-· CRT 
+Sorcerer & 
+other 
+PERSONAL 
+COMPUTERS 
+A.M.4TEUR A.ND 
+PERSONA.L NETFORJC.S 
+PROFESSIONAL A.ND 
+SPECJA.L NETITORKS; DA.TA. BA.NICS 
+For the connections between sta­
+tions, tha mechanics of computer net­
+working are fairly straightforward, 
+and we need not go into them here. 
+The so-called "packet" approach (now 
+being standardized under the name X.251 
+allows direct commercial hookup via 
+Telenet. More high-budget and high­
+flying approaches can use direct sat­
+ellite links between stations, which 
+are available and feasible now-. 
+•aov big will the total storage 
+be?" people aak. The an5"'er is, as 
+~ as people will~ for. Everj= 
+tlwigstored ha~7iavemoney behind 
+it. The system will grow as long as 
+paying demand increases- which should 
+be for a considerable period. No mat­
+ter how big it grows, you will be able 
+to get anything in it very quickly-­
+as long a• disks are added to the sys­
+tem. 
+V P~Pe~ 
+eXP(I1{.r, &il 
+--➔ 
+MACHINES 
+
+--- Page 55 ---
+
+Example: 
+A scholar writes a new interpreta­
+tion of ancient Greek society, with num­
+erous quotations from the writings of 
+those times. Each quotation is a window, 
+allowing the reader to step through and 
+read the original. 
+ANY SUBSET, SUBSTRUCTURE OR 
+GROUPING 
+WINDOWING INTO THE PRIOR 
+LITERATURE-previous public contents 
+of entire network 
+LITERARY MACHINES 
+
+--- Page 56 ---
+
+THE GREAT HOPE AND CONJECTURE 
+OF INSTANT UNIFICATION 
+Perhaps the most important thing, 
+and certainly the hardest part to believe, 
+is that everything on such a network can 
+come immediately, even as it grows to tre­
+mendous size. 
+First, let's be clear what we mean 
+by "immediately." we mean very quickly, 
+even though there will be variations. If 
+you telephone San Francisco from Chicago, 
+you get through "immediately"-- that is, 
+within perhaps three to fifteen seconds, 
+with an off chance of having to wait 
+thirty. We're talking about figures like 
+that.* 
+In any case, for comparatively lo­
+cal service (on-planet or nearby), we 
+may look forward to "instant" retrieval 
+of whatever is asked for. This means 
+essentially that all documents become a 
+single instantaneous whole. This in turn means that compound 
+documents of any kind become effectively 
+as accessible as simple ones. And we may 
+read and write accordingly. 
+~ Now, as human habitation grows be­
+yound the planet and speed-of-light con­
+siderations become significant, obviously 
+performance will degrade. For off-planet 
+users (or earthbound users calling an 
+off-planet station), the usual perform­
+ance figure must be added to the trans-mission time. Obviously, too, if inter­
+stellar travel is ever achieved, trans­
+mission delays will degrade response time 
+to months and years. (However, some 
+thought has been given to this problem in 
+the overall design: see "Tumbling through 
+the Docuverse, " Chapter 4. ) 
+LITERARY Z/ry MACHINES 
+
+--- Page 57 ---
+
+2•9 VttAL 1S1CJtS 
+Thus we have the framework of a complete, radically different way 
+of handling information. 
+OSER PRIVACY: A VITAL ISSUE 
+The net-work will not, may not 
+monitor who reads what or who writes 
+what in private documents. This is 
+vital. It is not easy to guarantee 
+and impossible to make fully automat­
+ic. This important problem will be 
+taken up later, in Chapters Three. 
+A PRINTING PRESS 
+We consider that this system may 
+best be considered as a "printing 
+press" of the future. 
+LITERARY FREEDOM OF THE PRESS 
+If this system is a printing 
+press, we can brook no greater res­
+triction on its functions than on con­
+ventional printing. Freedom of the 
+press has been challenged by tyrants 
+and scoundrels since Gutenberg. It 
+will happen again, and worse, on this 
+new playing-field. We must be ready. 
+LEGAL GOOD BEHAVIOR 
+Plainly, the system must live 
+within the law. However, what the law 
+is may often not be clear. Grey areas 
+(for the USA) involve pornography, li-
+bel, and "national security" (often 
+meaning matters embarrassing to a pol­
+itical administration). 
+There is no thinking out all 
+these eventualities. But this is a 
+libertarian system: restrict it, and 
+all will lose. 
+MACHINES 
+
+--- Page 58 ---
+
+Numerous issues of persona l freedom are conspicuously present. 
+JOHN DOE PUBLICATION 
+Normally publication will be by 
+stable individuals and companies with 
+known residence or place of business. 
+Still, there is no reason that anony­
+mous publication by walk-in and tran­
+sient users of the system should not 
+be allowed. 
+PEREMPTORY CHALLENGE 
+OF J'OHN DOE PUBLICATION 
+However, John Doe publication is 
+more sensitive to challenge, since the 
+John Does do not hang around to defend 
+their acts. 
+Hence peremptory challenges of 
+John Doe publications must carry 
+'-"ieight. 
+Consider libelous or uncomplimen ­
+tary John Doe graffiti defaming speci­
+fic individuals. If John Doe is not 
+available, the affected individual 
+should be able to effect removal of 
+the materials by peremptory challenge. 
+LITERARY CHALLENGE OF DEFENDED MATERIALS 
+Ho'-"iever, where materials are pub­
+lished by stable and accountable indi­
+viduals or firms, peremptory challenge 
+no longer holds water, and removal 
+must be by negotiation or by court 
+order. 
+MACHINES 
+
+--- Page 59 ---
+
+What we call "tuning" the system is the development of simple, fair and well-balanced arrangements and pricing that will balance users' incentives for the flexible and reasonable use of the system. (See "Tuning," Chapter 4.) 
+COPYRIGHT VIOIATIONS 
+Once materials are outside the 
+system and the user's terminal, normal 
+copyright law applies. Thus making 
+magnetic or paper copies of documents, 
+and giving them away or selling them, 
+is tortious and illegal, as it would 
+be without our system. Enforcement, 
+of course, is the victim's problem. 
+Since the use of any material on 
+the system by windowing is defined as 
+fair use, people are much freer to do 
+what they like with whatever is avail­
+able. 
+One fo:cm of copyright violation 
+is quite esoteric. That it is fre­
+quently mentioned suggests that people 
+are reaching rather far for objections. 
+It is this: what if someone makes 
+~~ of materials published by some­
+one else on the system, then re-enters 
+them as his own in order to obtain ---------royalties? As long as it went undetected, 
+LITERARY this scheme would work. However, the 
+violator is exposing himself, if de­
+tected to a prima facie case of copy­
+right violation. 
+MACHINES 
+
+--- Page 60 ---
+
+PLURALISM-- AND NEW UNDERSTANDING 
+What is in such a publishing net­
+work may be revised by anyone, rein­
+terpreted, redesigned. Anyone can pub­
+lish a~ version of Thomas Aquinas, 
+Ayn Rand, Einstein, or whoever else's 
+writings are on the system, attempting 
+to reach the true and correct formul­
+ations that always seem to elude the 
+person ahead of you. And no harm is 
+done, no credit lost, to the originals. 
+The same applies to explanations. 
+Most scientists and philosophers are 
+not the ones to clarify their own work. 
+The writings of a Niebuhr or a Talcott 
+Parsons need to be considerably clari­
+fied by other commentators before 
+most people can understand them. 
+A-."!o...a. ~~, ~"•9t ~--)"fl) 
+--~'""'Jut~ 
+LITERARY Very well. With the capacity for 
+any number of compound windowing docu­
+ments, good explainers-- the Asimovs 
+of tomorrow-- can take what is already 
+there, and add the many clarifications 
+that will bring understanding. 
+Is this chaos? Not at all. Be­
+cause at any one time, you are within 
+one specific document, the work of a 
+specific author. If this work is win­
+dowing to other documents, neverthe­
+less you are not "in" the others, but 
+viewing them through the present au­
+thor's filter. 
+MACHINES 
+
+--- Page 61 ---
+
+ETERNAL REVISION 
+There is no Final Word. There is 
+always a new view, a new idea, a rein­
+terpretation. Windowing hypertext of­
+fers the possibility that all writings 
+(never mind the word "knowledge") 
+may be forever revised and reinterpre­
+ted by new scholars, summarizers, pop­
+ularizers, anthologizers. 
+LITERARY MACHINES 
