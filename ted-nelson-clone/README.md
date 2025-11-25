@@ -1,3 +1,5 @@
+** Chat with Ted https://tednelson.carrd.co/ **
+
 # Ted Nelson's Original Vision of the Web
 
 This directory contains Ted Nelson's seminal works on hypertext, the web, and his original vision for interconnected information systems. All materials have been extracted to text format for easy exploration and learning.
