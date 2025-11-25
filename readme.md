@@ -1,5 +1,7 @@
 # HTTP Requests Quickstart
 
+![HTTP 402 Payment Required Demo](screenshot.png)
+
 Great! Let's strip everything back to the absolute basics—no crypto, no x402, no agents yet. Just pure, classic HTTP requests you can try right now in your browser or terminal.
 
 ## 1. What is an HTTP request? (in plain English)
